@@ -1,0 +1,137 @@
+ .dropdown {
+  float: right;
+  
+
+  }
+
+  .dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: rgb(191, 191, 191);
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 28px;
+  margin-right:87px; 
+  }
+      
+
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0px;
+  top: 100px;
+  width: 220px;
+  height: 276px;
+  opacity: .85;
+    
+  }
+
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 25px;
+  display: block;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+  background-color: #ddd;
+  }
+
+  .show {
+  display: block;
+  }
+      
+      
+  #map {
+        height: 522px;
+        width: 27%;
+        z-index: 1;
+        top: 100px;
+        left: 0px;
+     
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body{
+       
+      }
+      
+      #headercontainer{
+        z-index: 1000;
+        position: absolute;
+        background-color: white;
+        opacity: 1;
+        height: 100px;
+        width: 100%;
+        
+      }
+      
+      #karissa{
+        position: absolute;
+        font-family: 'Raleway', sans-serif;
+        top: 28px;
+        text-decoration: none;
+        color: black;
+        font-size: 34px;
+        left: 100px;
+      }
+      
+      
+      #imagebox{
+        position: absolute;
+        background-color: rgb(215, 231, 242);
+        opacity: 1;
+        height: 522px;
+        width: 73%;
+        top: 100px;
+        left: 27%;
+        overflow: scroll;
+      }
+
+      #picturecontainer{
+        position: relative;
+        
+        top: 14px;
+        text-align: center;
+
+
+      }
+    
+    .CountryTitle  {
+      font-size: 80px;
+     font-family: 'Fredericka the Great', cursive;
+   
+    }
+
+    .CountryBlurb {
+      font-size: 19px;
+      font-family: 'Raleway', sans-serif;
+      position: relative;
+      top: 4px;
+      margin-right: 5%;
+      margin-left: 5%;
+      font-weight: 200;
+      
+    }
+  
+
+img{
+ margin: 5px; 
+}
+      
