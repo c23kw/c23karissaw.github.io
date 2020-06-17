@@ -1,78 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <style>
-      body {
-        background-color: 	rgb(235, 242, 250);
-      }
-    </style>
-    <title>Karissa's Website</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+  <title>Karissa Wadia</title>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Stalemate&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <div id="menubar">
-      
-    <div class="topnav">
-      <a href="about.html">About</a>
-    </div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+</style>
 
-    <div class="topnav">
-      <a href="compsci.html">Computer Science</a>
-    </div>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+</style>
 
-    <div class="topnav">
-      <a href="film.html">Film</a>
-    </div>
 
-    <div class="topnav">
-      <a href="travel.html">Travel</a>
-    </div>
-    
-    
-  
-    </div>
-      
-    <a id="h1" href="index.html">KARISSA WADIA</a>
+</head>
 
-    <!--      end of links div  -->
-    <!--     end of menu div -->
-    
+<style>
 
-<!--     <img id="flower" src="https://cdn.glitch.com/9397641f-a56b-430b-94b4-3bfba655325c%2Fthumbnails%2Fimg92833001.jpg?1586726569738" alt="flower" width="" height=""> -->
-    
-    
-    <div class="images" id="flower">
-    </div>
-    <div class="images" id="walkingelephants">
-    </div>
-    <div class="images" id="ocean">
-    </div>
-    
-    
+
+body{
+background-image: url("./imgs/italy/4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+
+}
+
+html,body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+/*Start of Travel section style*/
+
+
+#Travel_parent {
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  top: 0px;
+  right: 0px;
+}
+
+#Travel_control {
+  left: 5.5vw;
+  height: 15px;
+  width: 20px;
+  z-index: 40;
+  position: inherit;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.7vw;
+  top: 42%;
+}
+
+
+#Travel_control:hover ~ #Travel_target {
+  background: rgb(255, 255, 255);
+}
+
+
+
+#Travel_target {
+  height: 100%;
+       width: 25%;
+       background-color: transparent;
+       margin: 0px;
+       position: fixed;
+       top: 0px;
+       opacity: .5; 
+       left: 0px;
    
+}
+
+
+/*Start of Film Section*/
+
+
+#Film_parent {
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  top: 0px;
+  left: 25%;
+}
+
+#Film_control {
+  position: relative;
+  left: 8.5vw;
+  height: 4px;
+  width: 1px;
+  z-index: 40;
+  top: 0px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.7vw;
+  color: white;
+  top: 42%;
+
+}
+
+#Film_control:hover ~ #Film_target {
+  background: rgb(255, 255, 255);
+}
+
+#Film_target {
+  width: 25%;
+       height: 100%;
+        background-color: transparent;
+        opacity: .5;
+        margin: 0px;
+        padding: 0px;
+    position: fixed;
+    top: 0px;    
     
-  </body>
+}
+
+/*start of Comp Sci section*/
+   
+#CompSci_parent {
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  top: 0px;
+  left: 50%;
+}
+
+#CompSci_control {
+  position: relative;
+  left: 3vw;
+  height: 10px;
+  width: 50px;
+  z-index: 40;
+  top: 0px;
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.7vw;
+  color: white;
+  top: 42%;
+
+
+}
+
+#CompSci_control:hover ~ #CompSci_target {
+  background: rgb(255, 255, 255);
+}
+
+#CompSci_target {
+  width: 25%;
+       height: 100%;
+        background-color: transparent;
+        opacity: .5;
+        margin: 0px;
+        padding: 0px;
+    position: fixed;
+    top: 0px;    
+    
+}
+
+
+/*Start of About styling*/
+
+#About_parent {
+  position: fixed;
+  height: 100%;
+  width: 25%;
+  top: 0px;
+  left: 75%;
+}
+
+#About_control {
+  position: relative;
+  left: 6.3vw;
+  height: 4px;
+  width: 1px;
+  z-index: 40;
+  top: 0px;
+ text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.7vw;
+  color: white;
+  top: 42%;
+
+}
+
+#About_control:hover ~ #About_target {
+  background: rgb(255, 255, 255);
+}
+
+#About_target {
+  width: 25%;
+       height: 100%;
+        background-color: transparent;
+        opacity: .5;
+        margin: 0px;
+        padding: 0px;
+    position: fixed;
+    top: 0px; 
+
+  }
+
+  a {
+  text-decoration: none;
+  color: white;
+}
+
+  a:hover {
+  color: black;
+
+}
+
+      
+ #titlefont{
+position: fixed;
+bottom: 57%;
+left: 30vw;
+width: 50vw;
+height: 20vw;
+ }
+
+
+</style>
+
+<body>
+
+
+<a href="index.html"><img src="./imgs/other/titlefont1.png" id="titlefont"></a>
+
+
+
+<div id="Travel_parent">
+ <div id="Travel_control"><a href="travel.html">TRAVEL</a></div></center>
+  <div id="Travel_target"></div>
+</div>
+
+<div id="Film_parent">
+  <div id="Film_control"><a href="film.html">FILM</a></div>
+  <div id="Film_target"></div>
+</div>
+
+<div id="CompSci_parent">
+  <div id="CompSci_control"><a href="compsci.html">COMPUTER SCIENCE</a></div>
+  <div id="CompSci_target"></div>
+</div>
+
+<div id="About_parent">
+  <div id="About_control"><a href="about.html">ABOUT</a></div>
+  <div id="About_target"></div>
+</div>
+
+
+</body>
+
+
+
+
 </html>
