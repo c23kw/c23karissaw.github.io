@@ -1,34 +1,176 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title></title>
-    <style type="text/css">
-    #square {
-        width: 200px;
-        height: 200px;
-        border: 1px solid black;
-        transition: 1s;
-        animation-name: grow-shrink; /*this is the name of the "keyframes animation" that applies to this div with the id of square*/
-        animation-duration:1s; /*this is how long the animation runs over*/
-        animation-iteration-count: infinite; /*this is how many times the animation runs*/
-    }
-
-    @keyframes grow-shrink{
-    	0%{ width:200px;
-    		height:200px; }/*this means at the beginning of the animation called "grow" which, according to the CSS above is 1 second long and runs infinitely*/
-
-    		50%{ width:300px;
-    		height:300px; } /*this would be half way through the animation what's happening. with an animation with a duration of 1s it's .5s*/
-
-    		100%{ width:200px;
-    		height:200px; } /*this is what's happening at 100% of the animation*/
-    }
-    </style>
 </head>
 
-<body>
-    <div id="square"></div>
-</body>
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+   <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet"/> 
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    
+    <title>Travel</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+
+
+
+<style>
+    
+    
+  .dropdown {
+  float: right;
+  
+
+  }
+
+  .dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: rgb(191, 191, 191);
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 28px;
+  margin-right:87px; 
+  }
+      
+
+
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 16px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: 0px;
+  top: 100px;
+  width: 220px;
+  height: 276px;
+    
+  }
+
+  .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 25px;
+  display: block;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  
+  }
+
+  .dropdown-content a:hover {
+  background-color: #ddd;
+  }
+
+  .show {
+  display: block;
+  }
+      
+      /* Optional: Makes the sample page fill the window. */
+      html,body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      body{
+       
+      }
+      
+      #headercontainer{
+        z-index: 1000;
+        position: absolute;
+        background-color: rgb(197, 240, 239);
+        opacity: 1;
+        height: 100px;
+        width: 100%;
+        
+      }
+      
+      #karissa{
+        position: absolute;
+        top: -6px;
+        width: 370px;
+        height: 130px;
+        left: 90px;
+      }
+    
+      a{
+        text-decoration: none;
+        color: black;
+      }
+
+     #notification{
+        color: black;
+        position: relative;
+        top: 250px;
+        padding:0px;
+        margin: 0px;
+        background-color: rgb(245, 213, 236);
+        font-size: 100px;
+        text-align: center;
+     }
+
+
+      
+
+
+</style>
+
+
+
+<body>
+
+
+<div id="headercontainer">
+      
+      <a href="index.html"><img src="./imgs/other/SubTitle.png" id="karissa"></a>
+    
+    <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">☰</button>
+ 
+      <div class="dropdown-content" id="myDropdown">
+    <a href="travel.html">Travel</a>
+    <a href="film.html">Film</a>
+    <a href="compsci.html">Computer Science</a>
+    <a href="about.html">About</a>
+  </div>
+  </div> 
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+       
+    </div>
+
+
+<p id="notification">Coming Soon!</p>
+
+
+
+
+</body>
 </html>

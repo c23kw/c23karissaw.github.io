@@ -84,12 +84,10 @@
       
       #karissa{
         position: absolute;
-        font-family: 'Raleway', sans-serif;
-        top: 28px;
-        text-decoration: none;
-        color: black;
-        font-size: 34px;
-        left: 100px;
+        top: -11px;
+        width: 370px;
+        height: 130px;
+        left: 85px;
       }
       
       
